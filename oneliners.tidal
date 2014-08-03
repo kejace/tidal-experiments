@@ -1,0 +1,6 @@
+d1 $ silence
+
+d1 $ density 2 $ jux (iter 3) $ sound "[bass3:1] * 4"
+  |+| (speed $ every 2 rev $  "[8 9 10 12 18]")
+
+d1 $ (spread' (striate' 4) ((+0.2) <$> slow 8 sine1)) $ jux rev $ sound (samples "[latibro*6,bd]/2" "0 7 4") |+| speed "[1 2 1.5]/4"
